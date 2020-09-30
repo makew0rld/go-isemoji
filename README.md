@@ -6,13 +6,8 @@
 
 Go library to test if a string is an emoji.
 
-## Install
-You can add it to your project by running the following command:
-```
-go get -u github.com/makeworld-the-better-one/go-isemoji
-```
-
 ## Usage
+
 ```go
 isemoji.IsEmoji("🤗")    // True
 isemoji.IsEmoji("test")  // False
