@@ -29,3 +29,9 @@ func TestName(t *testing.T) {
 	assert.Equal(t, "man: medium-light skin tone, red hair", Name("👨🏼‍🦰"), "that is the name")
 	assert.Equal(t, "", Name("test"), "\"test\" is not an emoji with a name")
 }
+
+// TestLatest tests a newly-added emoji to ensure the proper version is being used.
+func TestLatest(t *testing.T) {
+	assert.Equal(t, true, IsEmoji("😶‍🌫️"), "1F636 200D 1F32B FE0F was added in Emoji 13.1")
+	assert.Equal(t, "face in clouds", Name("😶‍🌫️"), "that is the name of an emoji added in 13.1")
+}

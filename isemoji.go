@@ -1,7 +1,7 @@
 // Package isemoji helps you determine whether a string is an emoji.
 package isemoji
 
-const EmojiVersion = "13.0"
+const EmojiVersion = "13.1"
 
 // IsEmoji returns true if the provided string contains one fully-qualified emoji.
 // Component emojis are also valid.
