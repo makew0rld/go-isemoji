@@ -32,6 +32,6 @@ func TestName(t *testing.T) {
 
 // TestLatest tests a newly-added emoji to ensure the proper version is being used.
 func TestLatest(t *testing.T) {
-	assert.Equal(t, true, IsEmoji("😶‍🌫️"), "1F636 200D 1F32B FE0F was added in Emoji 13.1")
-	assert.Equal(t, "face in clouds", Name("😶‍🌫️"), "that is the name of an emoji added in 13.1")
+	assert.Equal(t, true, IsEmoji("🫥"), "1FAE5 was added in Emoji 14.0")
+	assert.Equal(t, "dotted line face", Name("🫥"), "that is the name of an emoji added in 14.0")
 }
